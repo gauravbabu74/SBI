@@ -1,0 +1,35 @@
+/* Menu Appearance */
+
+.offcanvas{
+    
+    width: 230px;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    background: #333332;
+    font-size: 1em;
+    font-weight: bold;
+    -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+}
+
+.offcanvas a{
+    display: block;
+    color: #b3b3b1;
+	font-family:'opensans_bld',Arial, Helvetica, sans-serif;
+	font-size:16px;
+    padding: 15px 20px 15px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    text-decoration: none;
+}
+
+.offcanvas a:hover{
+    background: #0089cf;
+    color: #FFF;
+}
+
+

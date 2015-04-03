@@ -1,86 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
-    <link rel="stylesheet" href="styles/main.css" type="text/css" />
-    <link rel="stylesheet" href="styles/offcanvas.css">
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/main.js"></script>
-
-</head>
-<body>
-    
-<div id="main-page" data-role="view" data-model="app.HomeViewModel.viewModel">
-    <div class="view-content">
-             <header class="logo_sec">
-                <div class="logo">
-                    <a href="./">
-                        <img src="styles/images/logo.svg" alt="State Bank of India" title="State Bank of India" />
-                    </a>
-                </div>	
-            </header>
-            <section class="home_txt">
-                Get Your <span>Personal Loan</span> <br>
-
-                approved <span>in 5 mins</span>
-
-                <article>
-                    <img src="styles/images/home_icon.svg" alt="Get Started" width="150" />
-                </article>
-                <a href="#abc" class="main_lnk">Get Started</a>
-            </section>
-            </div>
-
-    </div>
- 
-    
-    
-    <div data-role="layout" data-id="main">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"><img alt="State Bank of India" src="styles/images/logo.svg" width="200" /></span>
-        <a data-role="button" class="menu-btn menu_icon" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"><img alt="Navigation" src="styles/images/menu.svg" width="30" /></a>
-      </div>
-    </div>
-
-    <!-- application views will be rendered here -->
-    
-  </div>
-
-  <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Navigation">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"></span>
-      </div>
-    </div>
-      <nav class="offcanvas offcanvas-left">
-    <ul data-role="listview">
-      <li>
-        <a href="views/home.html">Home</a>
-      </li>
-      <li>
-        <a href="views/settings.html">Settings</a>
-      </li>
-      <li>
-        <a href="views/contacts.html">Contacts</a>
-      </li>
-    </ul>
-          </nav>
-  </div> 
-
-   
-    
-    
-      <div id="abc" data-role="view"  data-layout="main" >
+  <div id="abc" data-role="view"  data-layout="main">
 <div id="container" class="snap-content">
- 
+  <header class="clearfix">
+    <div class="hdr_lft">
+    	<a id="open-left" class="menu-btn menu_icon" href="#"><img alt="Navigation" src="../styles/images/menu.svg" width="30" /></a>
+        <div class="logo_internal"><a href="./"><img alt="State Bank of India" src="../styles/images/logo.svg" width="200" /></a></div>
+    </div>
+  </header>
   
   <section class="clearfix">
   	<h3>Get Eligibility</h3>
@@ -179,8 +104,3 @@
 </div></div>
 
 
-
-    
-
-</body>
-</html>
