@@ -5,6 +5,17 @@
     HomeViewModel = kendo.data.ObservableObject.extend({
            show:function() {
                $(".km-scroll-container").css("-webkit-transform", "");
+               $(".disable").hide();
+               $('.css-rbox').click(function() {
+                var sel_value = $(this).val();
+                if (sel_value==='1') {
+                	$('#net').show();
+                    $('#debitcard').hide();
+                } else {
+                	$('#debitcard').show();
+                    $('#net').hide();
+                }
+            });
            },
            CouldGetPageShow:function() {
                var $range = $("#loan_range"), $result = $("#loan_result");
@@ -21,6 +32,9 @@
            },
            navigateToEligibilityPage:function() {  
                app.navigate("#appDrawer");
+           },
+           navigateToEligibilityPage:function() {
+               app.navigate("#views/get-eligibility.html");
            },
            navigateToEligibility2Page:function() {
                app.navigate("#views/get-eligibility2.html");
@@ -46,4 +60,5 @@
     app.HomeViewModel = {
         viewModel: new HomeViewModel()	
     };
+    
 })(window, jQuery);

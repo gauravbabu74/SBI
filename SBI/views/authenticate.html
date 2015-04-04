@@ -1,0 +1,63 @@
+  <div id="authenticate" data-role="view"  data-layout="main" data-before-show="app.HomeViewModel.viewModel.show" data-model="app.HomeViewModel.viewModel" >
+            <div id="container" class="snap-content">
+
+                <section class="clearfix">
+                <div class="sbi">
+                    <h3>Existing SBI Customer</h3>
+                    <div class="escoption">
+                        <div class="bank_account_container">
+                            <div class="option">
+                                <input type="radio" class="css-radiobox" id="escyes" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>Yes</span></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="css-radiobox" id="escno" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>No</span></label>
+                            </div>
+                       </div>
+                    </div>
+                    
+                    <h3>Authenticate Yourself:</h3>
+                    <div class="authoption">
+                        <div class="option">
+                            <input type="radio" class="css-rbox" id="authbyes" name="auth" value="1"><label class="authlabel" for="auth"><span>Using Netbanking:</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio"  class="css-rbox" id="authno" name="auth"  value="0"><label class="authlabel" for="auth"><span>Using Debit Card:</span></label>
+                        </div>
+                    </div>
+                    <div id="net" class="disable">
+                        <span class="regular">Netbanking Details:</span>
+                        <div class="form_fields">
+                            <div class="field_full">
+                                <label>Username</label>
+                                <input type="text" Placeholder="Username" />
+                            </div>
+
+                            <div class="field_full">
+                                <label>Password</label>
+                                <input type="password" Placeholder="Password" />
+                            </div>
+                            <input class="orange_btn" data-bind="click:navigateToEligibilityPage" type="submit" value="Submit" />
+                        </div>
+                    </div>
+                    <div id="debitcard" class="disable">
+                        <span class="regular">SBI Debit card details:</span>
+                        <div class="form_fields">
+                            <div class="field_full">
+                                <label>Debit card #</label>
+                                <input type="text" Placeholder="Card Number" />
+                            </div>
+
+                            <div class="field_full">
+                                <label>PIN</label>
+                                <input type="integer" maxlength="3" Placeholder="PIN" />
+                                 
+                            </div>
+                            <input class="orange_btn" data-bind="click:navigateToEligibilityPage" type="submit" value="Submit" />
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                </section>
+            </div>
+        </div>
