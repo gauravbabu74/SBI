@@ -3,9 +3,13 @@
         app = global.app = global.app || {};
 
     HomeViewModel = kendo.data.ObservableObject.extend({
+        
+           yourCity:sessionStorage.getItem("city"),
            show:function() {
+               $("body").removeClass("auth"); 
                $(".km-scroll-container").css("-webkit-transform", "");
                $(".disable").hide();
+               $("#yourCity").val(sessionStorage.getItem("city")); 
                $('.css-rbox').click(function() {
                 var sel_value = $(this).val();
                 if (sel_value==='1') {
@@ -17,6 +21,10 @@
                 }
             });
            },
+            showAuthPage:function()
+            {
+                $("body").addClass("auth"); 
+            },
            CouldGetPageShow:function() {
                var $range = $("#loan_range"), $result = $("#loan_result");
                var track = function (data) {

@@ -1,31 +1,34 @@
-  <div id="authenticate" data-role="view"  data-layout="main" data-before-show="app.HomeViewModel.viewModel.show" data-model="app.HomeViewModel.viewModel" >
+  <div id="authenticate" data-role="view"  data-layout="main" data-show="app.HomeViewModel.viewModel.showAuthPage" data-before-show="app.HomeViewModel.viewModel.show" data-model="app.HomeViewModel.viewModel" >
             <div id="container" class="snap-content">
 
                 <section class="clearfix">
                 <div class="sbi">
                     <h3>Existing SBI Customer</h3>
                     <div class="escoption">
+
                         <div class="bank_account_container">
                             <div class="option">
-                                <input type="radio" class="css-radiobox" id="escyes" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>Yes</span></label>
+                                <input type="radio" checked="checked" class="css-radiobox" id="add_bank11" name="bank_statement11"><label class="css-radio-label radGroup2" for="add_bank11"><span>Yes</span></label>
                             </div>
                             <div class="option">
-                                <input type="radio" class="css-radiobox" id="escno" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>No</span></label>
+                                <input type="radio" class="css-radiobox" id="click_upload11" name="bank_statement11"><label class="css-radio-label radGroup2" for="click_upload11"><span>No</span></label>
                             </div>
-                       </div>
+                        </div>
                     </div>
                     
-                    <h3>Authenticate Yourself:</h3>
-                    <div class="authoption">
+                    <h3>Authenticate Yourself</h3>   
+                    
+                    <div class="bank_account_container leftSid">
                         <div class="option">
-                            <input type="radio" class="css-rbox" id="authbyes" name="auth" value="1"><label class="authlabel" for="auth"><span>Using Netbanking:</span></label>
+                            <input type="radio" class="css-rbox css-radiobox" id="add_bank22" name="bank_statement22" value="1"><label class="css-radio-label radGroup2" for="add_bank22"><span>Using Netbanking</span></label>
                         </div>
+                    <hr class="blue_full"/>
                         <div class="option">
-                            <input type="radio"  class="css-rbox" id="authno" name="auth"  value="0"><label class="authlabel" for="auth"><span>Using Debit Card:</span></label>
+                            <input type="radio" class="css-rbox css-radiobox" id="click_upload22" name="bank_statement22" value="0"><label class="css-radio-label radGroup2" for="click_upload22"><span>Using Debit Card</span></label>
                         </div>
                     </div>
                     <div id="net" class="disable">
-                        <span class="regular">Netbanking Details:</span>
+                        <h3>Netbanking Details</h3>
                         <div class="form_fields">
                             <div class="field_full">
                                 <label>Username</label>
@@ -40,17 +43,16 @@
                         </div>
                     </div>
                     <div id="debitcard" class="disable">
-                        <span class="regular">SBI Debit card details:</span>
+                        <h3>SBI Debit card details</h3>
                         <div class="form_fields">
                             <div class="field_full">
                                 <label>Debit card #</label>
-                                <input type="text" Placeholder="Card Number" />
+                                <input type="number" Placeholder="Card Number" />
                             </div>
 
                             <div class="field_full">
                                 <label>PIN</label>
-                                <input type="integer" maxlength="3" Placeholder="PIN" />
-                                 
+                                <input type="number" maxlength="3" Placeholder="PIN" />
                             </div>
                             <input class="orange_btn" data-bind="click:navigateToEligibilityPage" type="submit" value="Submit" />
                         </div>

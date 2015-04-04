@@ -138,7 +138,7 @@ footer a{color:#7f7f7f; font-size:1.2em}
 /*-Buttons Classes-*/
 .btns_container{width:100%; float:left; border-bottom:1px solid #bbb}
 .btns_container .btn{ width:50%; float:left}
-.orange_btn{-webkit-appearance: none; font-size:18px; border:0px; text-align:center; outline:none; padding:15px 0; width:100%; cursor:pointer; margin-top:40px;float:left; display:block; background:#fc8f01; color:#fff; font-family:'opensans_bld',Arial, Helvetica, sans-serif; text-transform:uppercase; border-radius:0;}
+.orange_btn{-webkit-appearance: none; font-size:18px; border:0px; text-align:center; outline:none; padding:15px 0; width:100%; cursor:pointer; margin-top:40px;float:left; display:block; background:#fc8f01; color:#fff; font-family:'opensans_bld',Arial, Helvetica, sans-serif; text-transform:uppercase; border-radius:0;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; -ms-border-radius:5px;}
 .orange_btn:hover{background:#e48100; color:#fff;}
 .white_btn{-webkit-appearance: none; font-size:18px; border:0px; text-align:center; outline:none; padding:15px 0; width:100%; cursor:pointer; margin-top:40px;float:left; display:block; background:#fff; color:#004c8f; font-family:'opensans_bld',Arial, Helvetica, sans-serif; text-transform:uppercase; border-radius:0;}
 .white_btn:hover{background:#004c8f; color:#fff; }
@@ -191,8 +191,10 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 .km-navbar .km-show-title span img { margin-top:10px;}
 #container .sbi { margin: 30px 5%;font-size: 14px;color: #fff;float: left;width: 90%;}
 #container .sbi .bank_account_container {text-align:center;}
-#container .sbi .bank_account_container .option {float:none; width:10%;display: inline-block;}
- 
+#container .sbi .bank_account_container .option {float:none;display: inline-block; margin-right:20px; width:auto;}
+.km-on-android.km-flat.km-android4.km-4.km-m4.km-cordova.km-app.km-black-status-bar.km-vertical.km-widget.km-pane.auth {background-color:#0089cf;}
+#container .sbi .bank_account_container.leftSid {text-align:left;}
+#container .sbi .bank_account_container.leftSid .option {float:none; width:100%;display: inline-block; margin:0;}
 
 /*------Default Classes------*/
 @media screen and (max-width:1280px){
