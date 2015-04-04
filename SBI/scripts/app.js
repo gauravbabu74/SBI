@@ -7,4 +7,5 @@
     }, false);
     
     app = new kendo.mobile.Application(document.body, {skin: 'flat',initial: 'main-page'});
+    
 })(window);

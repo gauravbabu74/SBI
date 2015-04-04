@@ -53,15 +53,15 @@ body{background:#f8f8f8}
 #container section h4{text-align:left; color:#fff; float:left; width:100%; margin:20px 0px 20px; font-size:22px; }
 #container section h4 span{font-family:'opensans_reg',Arial, Helvetica, sans-serif;}
 #container section h4 b{font-family:'opensans_bld',Arial, Helvetica, sans-serif;}
-#container section select{padding:4px; cursor:pointer; outline:none; border:0;}
+#container section select{padding:8px; cursor:pointer; outline:none; border:0;}
 #container section option{padding:4px;outline:none; border:0;}
 #container section .form_fields label{ margin-bottom:5px; display:block; color:#fff; font-size:14px;}
 #container section .form_fields .field_full{margin-bottom:15px; float:left; width:100%}
 
 .form_fields .field_full .field_half{width:49%; margin-left:2%; float:left;}
 .form_fields .field_full .field_thrice{width:32%; margin-left:2%; float:left;}
-.form_fields .field_full input{ -webkit-appearance:none; -webkit-border-radius:0;  padding:8px 2%; width:96%; font-size:16px; color:#3b3b3b; font-family:'opensans_smbld', Arial, Helvetica, sans-serif; display:block}
-.form_fields .field_full .field_half input{padding:8px 5%; width:90%}
+.form_fields .field_full input{ -webkit-appearance:none; -webkit-border-radius:0;  padding:8px 2%; width:100%; font-size:16px; color:#3b3b3b; font-family:'opensans_smbld', Arial, Helvetica, sans-serif; display:block}
+.form_fields .field_full .field_half input{padding:8px 5%; width:100%}
 .form_fields .field_full .fields_cont .field_half:first-child, .form_fields .field_full .fields_cont .field_thrice:first-child{margin-left:0}
 .form_fields .field_full .check_txt{cursor:pointer; color:#ffffff; font-size:14px; line-height:20px; float:right; width:88%; margin-left:2%;}
 
@@ -126,7 +126,7 @@ footer a{color:#7f7f7f; font-size:1.2em}
 /*------Default Classes------*/
 
 /*-Select Box Classes-*/
-.select-style{padding: 0; margin: 0;border: 1px solid #ccc; width: 100%; border-radius: 3px; overflow: hidden; background-color: #fff;background: #fff url('../images/arrow_icon.svg') no-repeat 95% 50%;}
+.select-style{padding: 0; margin: 0;border: 1px solid #ccc; width: 100%; border-radius: 3px; overflow: hidden; background-color: #fff;background: #fff url('../styles/images/arrow_icon.svg') no-repeat 95% 50%;}
 .select-style select{font-size:16px; color:#3b3b3b; font-family:'opensans_smbld', Arial, Helvetica, sans-serif;  padding: 5px 8px; width: 100%; border: none;box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none;   -moz-appearance: none;   appearance: none;}
 .select-style select:focus{outline: none;}
 
@@ -185,9 +185,16 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 .title_icon img{}
 
 .km-leftitem .menu-btn {background: none;border: 0;padding: 0;}
-#appDrawer.km-left-drawer {width:230px !important;}
-#appDrawer .km-scroll-wrapper {background-color:#333332;}
+#appDrawer.km-left-drawer {width:230px !important; top:-1px;}
+#appDrawer .km-scroll-wrapper {background-color:#333332;
+    -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);}
 #appDrawer .km-listview-wrapper ul li {background-color:transparent !important; color: #b3b3b1;font-family: "opensans_bld",Arial,Helvetica,sans-serif;}
+
+#eligibility {}
+
+
 
 /*------Default Classes------*/
 @media screen and (max-width:1280px){
