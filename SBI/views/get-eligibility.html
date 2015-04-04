@@ -1,106 +1,99 @@
-  <div id="abc" data-role="view"  data-layout="main">
-<div id="container" class="snap-content">
-  <header class="clearfix">
-    <div class="hdr_lft">
-    	<a id="open-left" class="menu-btn menu_icon" href="#"><img alt="Navigation" src="../styles/images/menu.svg" width="30" /></a>
-        <div class="logo_internal"><a href="./"><img alt="State Bank of India" src="../styles/images/logo.svg" width="200" /></a></div>
-    </div>
-  </header>
-  
-  <section class="clearfix">
-  	<h3>Get Eligibility</h3>
-    <div class="form_fields">
-    	<div class="field_full">
-        	<label>We have your location</label>
-            <input type="text" Placeholder="Noida" />
-        </div>
-        
-        <div class="field_full">
-        	<label>Choose different location</label>
-          <div class="fields_cont">
-       		<div class="field_half">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">State</option>
-                        <option>Delhi</option>
-                        <option>Uttar Pradesh</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_half">
-                <div class="select-style">
-                    <select>
-                        <option selected="selected">City</option>
-                        <option>New Delhi</option>
-                        <option>Noida</option>
-                    </select>
-                </div>
-            </div>
-          </div>
-        </div>
-         <div class="field_full">
-          <div class="fields_cont">
-       		<div class="field_half">
-            	<label>Resident type</label>
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">Owned</option>
-                        <option>Rented</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_half">
-            	<label>Resident Since</label>
-                <div class="select-style">
-                    <select>
-                        <option selected>2011</option>
-                        <option>2012</option>
-                    </select>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="field_full">
-        <label>Date of birth</label>
-         <div class="fields_cont">
-       		<div class="field_thrice">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">March</option>
-                        <option>April</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_thrice">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">09</option>
-                        <option>10</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_thrice">
-                <div class="select-style">
-                    <select>
-                        <option selected>1987</option>
-                        <option>1988</option>
-                    </select>
-                </div>
-            </div>
-          </div>  
-        </div>
-        <div class="field_full">
-        <label>Resident type</label>
-            <div class="select-style">
-                    <select>
-                        <option selected>Salaried</option>
-                        <option>Self</option>
-                    </select>
-            </div>
-        </div>
-    </div>
-    <input class="orange_btn" type="submit" value="Proceed" />
-</section>
-</div></div>
+  <div id="eligibility" data-role="view"  data-layout="main" data-model="app.HomeViewModel.viewModel" >
+            <div id="container" class="snap-content">
 
+                <section class="clearfix">
+                    <h3>Get Eligibility</h3>
+                    <div class="form_fields">
+                        <div class="field_full">
+                            <label>We have your location</label>
+                            <input type="text" Placeholder="Noida" />
+                        </div>
 
+                        <div class="field_full">
+                            <label>Choose different location</label>
+                            <div class="fields_cont">
+                                <div class="field_half">
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected="selected">State</option>
+                                            <option>Delhi</option>
+                                            <option>Uttar Pradesh</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field_half">
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected="selected">City</option>
+                                            <option>New Delhi</option>
+                                            <option>Noida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field_full">
+                            <div class="fields_cont">
+                                <div class="field_half">
+                                    <label>Resident type</label>
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected="selected">Owned</option>
+                                            <option>Rented</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field_half">
+                                    <label>Resident Since</label>
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected>2011</option>
+                                            <option>2012</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field_full">
+                            <label>Date of birth</label>
+                            <div class="fields_cont">
+                                <div class="field_thrice">
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected="selected">March</option>
+                                            <option>April</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field_thrice">
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected="selected">09</option>
+                                            <option>10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field_thrice">
+                                    <div class="select-style">
+                                        <select>
+                                            <option selected>1987</option>
+                                            <option>1988</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field_full">
+                            <label>Resident type</label>
+                            <div class="select-style">
+                                <select>
+                                    <option selected>Salaried</option>
+                                    <option>Self</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="orange_btn" data-bind="click:navigateToEligibility2Page" type="submit" value="Proceed" />
+                </section>
+            </div>
+        </div>

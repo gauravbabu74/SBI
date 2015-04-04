@@ -1,0 +1,94 @@
+.rangeslider.year .irs-line-mid,
+.rangeslider.year .irs-line-left,
+.rangeslider.year .irs-line-right,
+.rangeslider.year .irs-bar,
+.rangeslider.year .irs-bar-edge,
+.rangeslider.year .irs-slider {
+    background: url(../styles/images/sprite-skin-nice2.png) repeat-x;
+}
+
+.rangeslider.year .irs {
+    height: 40px;
+}
+.rangeslider.year .irs-with-grid {
+    height: 60px;
+}
+.rangeslider.year .irs-line {
+    height: 8px; top: 25px;
+}
+    .rangeslider.year .irs-line-left {
+        height: 8px;
+        background-position: 0 -30px;
+    }
+    .rangeslider.year .irs-line-mid {
+        height: 8px;
+        background-position: 0 0;
+    }
+    .rangeslider.year .irs-line-right {
+        height: 8px;
+        background-position: 100% -30px;
+    }
+
+.rangeslider.year .irs-bar {
+    height: 8px; top: 25px;
+    background-position: 0 -60px;
+}
+    .rangeslider.year .irs-bar-edge {
+        top: 25px;
+        height: 8px; width: 11px;
+        background-position: 0 -90px;
+    }
+
+.rangeslider.year .irs-shadow {
+    height: 1px; top: 34px;
+    background: #000;
+    opacity: 0.15;
+}
+.rangeslider.year .lt-ie9 .irs-shadow {
+    filter: alpha(opacity=15);
+}
+
+.rangeslider.year .irs-slider {
+    width: 22px; height: 22px;
+    top: 17px;
+    background-position: 0 -120px;
+}
+.rangeslider.year .irs-slider.state_hover, .rangeslider.year .irs-slider:hover {
+    background-position: 0 -150px;
+}
+
+.rangeslider.year .irs-min, .rangeslider.year .irs-max {
+    color: #999;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    top: 0; padding: 1px 3px;
+    background: rgba(0,0,0,0.1);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.rangeslider.year .lt-ie9 .irs-min, .rangeslider.year .lt-ie9 .irs-max {
+    background: #ccc;
+}
+
+.rangeslider.year .irs-from, .rangeslider.year .irs-to, .rangeslider.year .irs-single {
+    color: #fff;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: rgba(0,0,0,0.3);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.rangeslider.year .lt-ie9 .irs-from, .rangeslider.year .lt-ie9 .irs-to, .rangeslider.year .lt-ie9 .irs-single {
+    background: #999;
+}
+
+.rangeslider.year .irs-grid-pol {
+    background: #99a4ac;
+}
+.rangeslider.year .irs-grid-text {
+    color: #99a4ac;
+}
+
+.rangeslider.year .irs-disabled {
+}

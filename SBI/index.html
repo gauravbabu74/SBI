@@ -1,186 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
-    <link rel="stylesheet" href="styles/main.css" type="text/css" />
-    <link rel="stylesheet" href="styles/offcanvas.css">
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/main.js"></script>
-
-</head>
-<body>
-    
-<div id="main-page" data-role="view" data-model="app.HomeViewModel.viewModel">
-    <div class="view-content">
-             <header class="logo_sec">
-                <div class="logo">
-                    <a href="./">
-                        <img src="styles/images/logo.svg" alt="State Bank of India" title="State Bank of India" />
-                    </a>
-                </div>	
-            </header>
-            <section class="home_txt">
-                Get Your <span>Personal Loan</span> <br>
-
-                approved <span>in 5 mins</span>
-
-                <article>
-                    <img src="styles/images/home_icon.svg" alt="Get Started" width="150" />
-                </article>
-                <a href="#abc" class="main_lnk">Get Started</a>
-            </section>
-            </div>
-
-    </div>
- 
-    
-    
-    <div data-role="layout" data-id="main">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"><img alt="State Bank of India" src="styles/images/logo.svg" width="200" /></span>
-        <a data-role="button" class="menu-btn menu_icon" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"><img alt="Navigation" src="styles/images/menu.svg" width="30" /></a>
-      </div>
-    </div>
-
-    <!-- application views will be rendered here -->
-    
-  </div>
-
-  <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Navigation">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"></span>
-      </div>
-    </div>
-      <nav class="offcanvas offcanvas-left">
-    <ul data-role="listview">
-      <li>
-        <a href="views/home.html">Home</a>
-      </li>
-      <li>
-        <a href="views/settings.html">Settings</a>
-      </li>
-      <li>
-        <a href="views/contacts.html">Contacts</a>
-      </li>
-    </ul>
-          </nav>
-  </div> 
-
-   
-    
-    
-      <div id="abc" data-role="view"  data-layout="main" >
-<div id="container" class="snap-content">
- 
-  
-  <section class="clearfix">
-  	<h3>Get Eligibility</h3>
-    <div class="form_fields">
-    	<div class="field_full">
-        	<label>We have your location</label>
-            <input type="text" Placeholder="Noida" />
-        </div>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="styles/main.css" type="text/css" />
+        <link rel="stylesheet" href="styles/range_slider.css" type="text/css" />
+<link rel="stylesheet" href="styles/range_slider_skin.css" type="text/css" />
+<link rel="stylesheet" href="styles/range_slider_skin2.css" type="text/css" />
+        <link rel="stylesheet" href="styles/offcanvas.css">
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.all.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/range_slider.min.js"></script>
         
-        <div class="field_full">
-        	<label>Choose different location</label>
-          <div class="fields_cont">
-       		<div class="field_half">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">State</option>
-                        <option>Delhi</option>
-                        <option>Uttar Pradesh</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_half">
-                <div class="select-style">
-                    <select>
-                        <option selected="selected">City</option>
-                        <option>New Delhi</option>
-                        <option>Noida</option>
-                    </select>
-                </div>
-            </div>
-          </div>
-        </div>
-         <div class="field_full">
-          <div class="fields_cont">
-       		<div class="field_half">
-            	<label>Resident type</label>
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">Owned</option>
-                        <option>Rented</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_half">
-            	<label>Resident Since</label>
-                <div class="select-style">
-                    <select>
-                        <option selected>2011</option>
-                        <option>2012</option>
-                    </select>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="field_full">
-        <label>Date of birth</label>
-         <div class="fields_cont">
-       		<div class="field_thrice">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">March</option>
-                        <option>April</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_thrice">
-               <div class="select-style">
-                    <select>
-                        <option selected="selected">09</option>
-                        <option>10</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field_thrice">
-                <div class="select-style">
-                    <select>
-                        <option selected>1987</option>
-                        <option>1988</option>
-                    </select>
-                </div>
-            </div>
-          </div>  
-        </div>
-        <div class="field_full">
-        <label>Resident type</label>
-            <div class="select-style">
-                    <select>
-                        <option selected>Salaried</option>
-                        <option>Self</option>
-                    </select>
-            </div>
-        </div>
-    </div>
-    <input class="orange_btn" type="submit" value="Proceed" />
-</section>
-</div></div>
 
+    </head>
+    <body>
 
+        <div id="main-page" data-role="view" data-model="app.HomeViewModel.viewModel">
+            <div class="view-content">
+                <header class="logo_sec">
+                    <div class="logo">
+                        <a href="./">
+                            <img src="styles/images/logo.svg" alt="State Bank of India" title="State Bank of India" />
+                        </a>
+                    </div>
+                </header>
+                <section class="home_txt">
+                    Get Your <span>Personal Loan</span> <br>
 
-    
+                    approved <span>in 5 mins</span>
 
-</body>
+                    <article>
+                        <img src="styles/images/home_icon.svg" alt="Get Started" width="150" />
+                    </article>
+                    <a href="#views/get-eligibility.html" class="main_lnk">Get Started</a>
+                </section>
+            </div>
+
+        </div>
+
+        <div data-role="layout" data-id="main">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"><img alt="State Bank of India" src="styles/images/logo.svg" width="200" /></span>
+                    <a data-role="button" class="menu-btn menu_icon" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button">
+                        <img alt="Navigation" src="styles/images/menu.svg" width="30" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- application views will be rendered here -->
+
+        </div>
+
+        <!-- application drawer and contents -->
+        <div data-role="drawer" id="appDrawer" style="width: 270px" >
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+            <nav class="offcanvas offcanvas-left">
+                <ul data-role="listview">
+                    <li>
+                        <a href="#">My Account</a>
+                    </li>
+                    <li>
+                        <a href="#">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">My Transactions</a>
+                    </li>
+                    <li>
+                        <a href="#">SBI Card Statement</a>
+                    </li>
+                    <li>
+                        <a href="#">Customer Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Payment Notification</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+      
+
+    </body>
 </html>

@@ -1,0 +1,29 @@
+<div id="eligibility2" data-role="view"  data-layout="main" data-model="app.HomeViewModel.viewModel">
+    <div id="container" class="snap-content"> 
+  <section class="clearfix">
+  	<h3>Provide Your<br/>Bank Statement</h3>
+    <div class="bank_account">
+    	<span class="regular">Please select one of the following</span>
+        <div class="bank_account_container">
+        	<div class="option">
+              <input type="radio" checked="checked" class="css-radiobox" id="add_bank" name="bank_statement"><label class="css-radio-label radGroup2" for="add_bank"><span>Add Your bank Account<b>For immediate approval choose this option</b></span></label>
+                <a href="#" class="question_icon"><img src="styles/images/question_icon.svg" /></a>
+            </div>
+            <hr class="blue_full"/>
+            <div class="option">
+                 <input type="radio" class="css-radiobox" id="click_upload" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>Click and Upload</span></label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btns_container">
+    	<div class="btn">
+    	<input class="orange_btn" data-bind="click:navigateToProvideBankStatement2Page" type="submit" value="Save Now" />
+        </div>
+        <div class="btn">
+    	<input class="white_btn" data-bind="click:navigateToProvideBankStatement2Page" type="submit" value="Proceed" />
+        </div>
+    </div>
+</section>
+</div>
+</div>

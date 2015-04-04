@@ -1,0 +1,56 @@
+<div id="eligibility2" data-role="view"  data-layout="main" data-show="app.HomeViewModel.viewModel.CouldGetPageShow" data-model="app.HomeViewModel.viewModel">
+    <div id="container" class="snap-content">
+        <section class="clearfix">
+            <h3>
+                Based On Your Input <br>
+                You Could Get
+            </h3>
+            <hr class="blue"/>
+            <div class="rangeslider loan">
+                <h4>
+                    <span>Loan</span> - RS. <b id="loan_result"></b>
+                </h4>
+                <div class="slider_bx" data-snap-ignore="true">
+                    <input type="text" id="loan_range" value="" name="range" />
+                    <div class="range_values">
+                        <div class="lft">
+                            Rs. <b>50,000</b>
+                        </div>
+                        <div class="ryt">
+                            Rs. <b>300,000</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rangeslider year">
+                <h4>
+                    <span>Term</span> - <b id="year_result"></b> Years
+                </h4>
+                <div class="slider_bx" data-snap-ignore="true">
+                    <input type="text" id="year_range" value="" name="range" />
+                    <div class="range_values">
+                        <div class="lft">
+                            <b>1 Year</b>
+                        </div>
+                        <div class="ryt">
+                            <b>3 Year</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rangeslider year margin_tp_20">
+                <div class="slider_bx padding_tp_btm_20">
+                    <div class="interest_rel_txt regular">
+                        Interest Rate <i class="divdr_arw1"></i> <i class="bold strike_through">15% </i>
+                    </div>
+                    <hr class="blue_full"/>
+                    <div class="interest_rel_txt orange_txt bold">
+                        On this Loan you will get <i class="divdr_arw2"></i>13.75%
+                    </div>
+                </div>
+            </div>
+            <a class="orange_btn" data-bind="click:navigateToLoanOfferPage">I am Interested</a>
+        </section>
+    </div>
+    
+</div>

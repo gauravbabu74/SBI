@@ -1,9 +1,9 @@
 
-(function () {
+(function (global) {
+        app = global.app = global.app || {};
 
     // store a reference to the application object that will be created
     // later on so that we can use it if need be
-    var app;
 
     // create an object to store the models for each view
     window.APP = {
@@ -32,7 +32,11 @@
       // Cordova will wait 5 very long seconds to do it for you.
       navigator.splashscreen.hide();
 
-      app = new kendo.mobile.Application(document.body, {
+      
+
+    }, false);
+
+app = new kendo.mobile.Application(document.body, {
         
         // comment out the following line to get a UI which matches the look
         // and feel of the operating system
@@ -41,8 +45,4 @@
         // the application needs to know which view to load first
         initial: 'main-page'
       });
-
-    }, false);
-
-
-}());
+})(window);
