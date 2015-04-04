@@ -187,7 +187,7 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 .km-leftitem .menu-btn {background: none;border: 0;padding: 0;}
 #appDrawer.km-left-drawer {width:230px !important;}
 #appDrawer .km-scroll-wrapper {background-color:#333332;}
-#appDrawer .km-listview-wrapper ul li {background-color:transparent !important;}
+#appDrawer .km-listview-wrapper ul li {background-color:transparent !important; color: #b3b3b1;font-family: "opensans_bld",Arial,Helvetica,sans-serif;}
 
 /*------Default Classes------*/
 @media screen and (max-width:1280px){
@@ -207,9 +207,22 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 @media screen and (max-width:480px){
 .logo_sec {margin-top:15px;}
 }
+@media screen and (max-width:450px){
+.logo_sec {margin-top:110px;}
+}
 @media screen and (max-width:390px){
 .logo_sec {margin-top:70px;}   
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:360px){
+.logo_sec {margin-top:70px;}  
+}
+@media screen and (max-width:330px){
 .logo_internal img{width:100%; max-width:150px;}
+.logo_sec {margin-top:15px;}  
+}
+@media screen and ( max-height:440px ){
+.logo_sec {margin-top:10px;}  
+}
+@media screen and ( max-height: 390px ){
+.logo_sec {margin-top:10px;}  
 }

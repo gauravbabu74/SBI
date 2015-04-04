@@ -42,7 +42,7 @@
     {
        app.navigate("#views/provide-bank-statement2.html");     
     },
-     navigateToIndexPage:function()
+    navigateToIndexPage:function()
     {
        app.navigate("#main-page");     
     }

@@ -6,25 +6,25 @@
     	<span class="regular">Please select one of the following</span>
         <div class="bank_account_container">
         	<div class="option">
-              <input type="radio" class="css-radiobox" id="add_bank" name="bank_statement"><label class="css-radio-label radGroup2" for="add_bank"><span>Add Your bank Account<b>For immediate approval choose this option</b></span></label>
-                <a href="#" class="question_icon"><img src="styles/images/question_icon.svg" /></a>
+              <input type="radio" class="css-radiobox" id="add_bank2" name="bank_statement2"><label class="css-radio-label radGroup2" for="add_bank2"><span>Add Your bank Account<b>For immediate approval choose this option</b></span></label>
+                <a class="question_icon"><img src="styles/images/question_icon.svg" /></a>
             </div>
             <hr class="blue_full"/>
             <div class="option">
-                 <input type="radio"  checked="checked" class="css-radiobox" id="click_upload" name="bank_statement"><label class="css-radio-label radGroup2" for="click_upload"><span>Click and Upload</span></label>
+                 <input type="radio"  checked="checked" class="css-radiobox" id="click_upload2" name="bank_statement2"><label class="css-radio-label radGroup2" for="click_upload2"><span>Click and Upload</span></label>
             </div>
         </div>
     </div>
     <div class="upload_btns2">
-    	<a href="#"><span>Upload Existing</span></a>
-        <a href="#"><span>Use Camera</span></a>
+    	<a ><span>Upload Existing</span></a>
+        <a ><span>Use Camera</span></a>
     </div>
     <div class="btns_container">
     	<div class="btn">
-    	<input class="orange_btn" type="submit" value="Save Now" />
+    	<input class="orange_btn" data-bind="click:navigateToIndexPage" type="submit" value="Save Now" />
         </div>
         <div class="btn">
-    	<input class="white_btn" type="submit" value="Submit" />
+    	<input class="white_btn" data-bind="click:navigateToIndexPage" type="submit" value="Submit" />
         </div>
     </div>
 </section>
