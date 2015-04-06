@@ -46,7 +46,7 @@ body{background:#f8f8f8}
 #container .logo_internal{padding:10px 0 0;}
 #container section{background:#0089cf; padding:0;}
 #container section .form_fields{padding:20px 4%}
-#container section h3{color:#fff; text-align:center; float:left; width:100%; margin:20px 0px 20px; font-size:22px;}
+#container section h3{color:#fff; text-align:center; float:left; width:100%; margin:20px 0px 20px; font-size:22px;font-family: "opensans_lgt",Arial,Helvetica,sans-serif;}
 #container section h1{color:#fff; padding:10px 4%; text-align:left; float:left; width:100%; margin:0px 0px 0px; font-size:22px;}
 #container section h1 a{color:#fff; padding:10px 0;display:block}
 #container section h1 span{float:right;font-family:'opensans_reg',Arial, Helvetica, sans-serif; font-size:30px;}
@@ -127,7 +127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', end
 .bank_steps{margin:20px 4%; color:#fff; float:left; width:92%}
 .bank_steps .step{ padding-bottom:20px; border-bottom:1px solid #51b1e2; float:left; width:100%; margin-bottom:10px; font-size:17px; font-family:'opensans_reg', Arial, Helvetica, sans-serif}
 .bank_steps .step:last-child{ margin-bottom:0; border-bottom:0}
-.bank_steps .step span{display:block; font-size:16px; margin:5px 0px; font-family:'opensans_lgt', Arial, Helvetica, sans-serif;s}
+.bank_steps .step span{display:block; font-size:16px; margin:5px 0px; font-family:'opensans_lgt', Arial, Helvetica, sans-serif;}
 .bank_steps .step .no{font-family:'opensans_bld', Arial, Helvetica, sans-serif; font-size:14px; margin-bottom:10px; margin-left:10px;}
 .bank_steps .step .icon{float:left; position:relative; border:1px solid #fff; width:10%; min-width:50px; max-width:50px; height:50px;  border-radius:50%; -ms-border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; -o-border-radius:50%}
 .bank_steps .step .icon img{max-width:28px; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; max-height:28px; height:28px;}
@@ -212,6 +212,11 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 .km-on-android.km-flat.km-android4.km-4.km-m4.km-cordova.km-app.km-black-status-bar.km-vertical.km-widget.km-pane.auth {background-color:#0089cf;}
 #container .sbi .bank_account_container.leftSid {text-align:left;}
 #container .sbi .bank_account_container.leftSid .option {float:none; width:100%;display: inline-block; margin:0;}
+
+.option.only_txt a i { font-size:1.4em; font-style:normal; margin:10px 10px 0; float:right;}
+.white_bg_txt { background: none repeat scroll 0 0 #fff;  color: #004c8f;  float: left;  font-size: 19px;  padding: 20px 4%;  text-align: center;width: 92%;}
+.smbld {font-family: "opensans_smbld",Arial,Helvetica,sans-serif;}
+.white_bg_txt span { display: block;  margin: 10px 0;font-family: "opensans_lgt",Arial,Helvetica,sans-serif;}
 
 /*------Default Classes------*/
 @media screen and (max-width:1280px){
