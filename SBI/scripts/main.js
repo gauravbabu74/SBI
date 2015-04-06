@@ -20,6 +20,20 @@
                        $('#net').hide();
                    }
                });
+               
+                $("#datepicker").kendoDatePicker({
+                format: "MM-dd-yyyy",
+                animation: {
+                    close: {
+                        effects: "fadeOut zoom:out",
+                        duration: 300
+                    },
+                    open: {
+                        effects: "fadeIn zoom:in",
+                        duration: 300
+                    }
+                }
+                }).data("kendoDatePicker");
            },
            showAuthPage:function() {
                $("body").addClass("auth"); 
