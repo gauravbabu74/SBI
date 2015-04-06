@@ -20,8 +20,9 @@
                        $('#net').hide();
                    }
                });
-               
+               var todaysDate = new Date();
                 $("#datepicker").kendoDatePicker({
+                value: todaysDate,    
                 format: "MM-dd-yyyy",
                 animation: {
                     close: {
@@ -32,7 +33,7 @@
                         effects: "fadeIn zoom:in",
                         duration: 300
                     }
-                }
+                },
                 }).data("kendoDatePicker");
            },
            showAuthPage:function() {
@@ -67,7 +68,7 @@
                app.navigate("#views/loan-offer.html");
            },
            navigateToProvideBankStatementPage:function() {
-               app.navigate("#views/provide-bank-statement.html");
+               app.navigate("#views/add-your-bank-ac.html");
            },
            navigateToProvideBankStatement2Page:function() {
                app.navigate("#views/provide-bank-statement2.html");     
@@ -76,7 +77,14 @@
                app.navigate("#views/provide-bank-statement3.html");     
            },
            navigateToCongratulationPage:function() {
-               app.navigate("#views/congratulation.html");     
+               app.showLoading();
+                 setTimeout(function()
+                 {  
+                    app.hideLoading();
+                    app.navigate("#views/congratulation.html");
+               
+                 }, 5000);
+
            },
            navigateTooanReferencePage:function() {
                app.navigate("#views/loan-reference.html");     
