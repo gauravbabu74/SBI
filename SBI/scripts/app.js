@@ -6,7 +6,8 @@
       navigator.splashscreen.hide();
       if(navigator.geolocation)
       {
-        navigator.geolocation.getCurrentPosition(oncallback);
+        //navigator.geolocation.getCurrentPosition(oncallback);
+          
       }  
         
     }, false);
@@ -19,7 +20,6 @@
         $.getJSON(geocodingAPI, function (json) {
             if (json.status === "OK") {
                 var result = json.results[0];
-                console.log(result);
                 var city = "";
                 var state = "";
                 for (var i = 0, len = result.address_components.length; i < len; i++) {
