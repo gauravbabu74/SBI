@@ -1,0 +1,36 @@
+<div id="eligibility2" data-role="view"  data-layout="main" data-before-show="app.HomeViewModel.viewModel.show" data-model="app.HomeViewModel.viewModel">
+    <div id="container" class="snap-content">
+        <section class="clearfix">
+            <h3>
+                <span class="title_icon"><img src="styles/images/statement_received.svg" width="30" /></span>Statement Received
+            </h3>
+                <div class="bank_account">
+                    <span class="regular">Please select one of the following</span>
+                    <div class="bank_account_container">
+                        <div class="option only_txt">
+                            <a href="#">
+                                <span>Add Your bank Account</span><i>+</i>
+                            </a>
+
+                        </div>
+                        <hr class="blue_full"/>
+                        <div class="option">
+                            <input type="radio" class="css-radiobox" id="click_upload" name="bank_statement">
+                            <label class="css-radio-label radGroup2" for="click_upload">
+                                <span>Click and Upload</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btns_container">
+                    <div class="btn">
+                        <input class="orange_btn" type="submit" data-bind="click:navigateToCongratulationPage" value="Save Now" />
+                    </div>
+                    <div class="btn">
+                        <input class="white_btn" type="submit" data-bind="click:navigateToCongratulationPage" alue="Submit" />
+                    </div>
+                </div>
+        </section>
+    </div>
+</div>

@@ -11,20 +11,19 @@
                $(".disable").hide();
                $("#yourCity").val(sessionStorage.getItem("city")); 
                $('.css-rbox').click(function() {
-                var sel_value = $(this).val();
-                if (sel_value==='1') {
-                	$('#net').show();
-                    $('#debitcard').hide();
-                } else {
-                	$('#debitcard').show();
-                    $('#net').hide();
-                }
-            });
+                   var sel_value = $(this).val();
+                   if (sel_value==='1') {
+                       $('#net').show();
+                       $('#debitcard').hide();
+                   } else {
+                       $('#debitcard').show();
+                       $('#net').hide();
+                   }
+               });
            },
-            showAuthPage:function()
-            {
-                $("body").addClass("auth"); 
-            },
+           showAuthPage:function() {
+               $("body").addClass("auth"); 
+           },
            CouldGetPageShow:function() {
                var $range = $("#loan_range"), $result = $("#loan_result");
                var track = function (data) {
@@ -59,6 +58,15 @@
            navigateToProvideBankStatement2Page:function() {
                app.navigate("#views/provide-bank-statement2.html");     
            },
+           navigateToProvideBankStatement3Page:function() {
+               app.navigate("#views/provide-bank-statement3.html");     
+           },
+           navigateToCongratulationPage:function() {
+               app.navigate("#views/congratulation.html");     
+           },
+           navigateTooanReferencePage:function() {
+               app.navigate("#views/loan-reference.html");     
+           },
            navigateToIndexPage:function() {
                app.navigate("#main-page");     
            }
@@ -68,5 +76,4 @@
     app.HomeViewModel = {
         viewModel: new HomeViewModel()	
     };
-    
 })(window, jQuery);
