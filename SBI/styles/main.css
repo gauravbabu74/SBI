@@ -114,7 +114,7 @@ background: -ms-linear-gradient(top, #d5d5d5 0%,#ffffff 100%); /* IE10+ */
 background: linear-gradient(to bottom, #d5d5d5 0%,#ffffff 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
 }
-.amount_table{background:#fff; border-radius:4px; -ms-border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; color:#0089cf; font-family:'opensans_bld', Arial, Helvetica, sans-serif; font-size:16px; float:left; width:88%; margin:10px 2%; padding:10px 4%;}
+.amount_table{background:#fff; border-radius:4px; -ms-border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; color:#0089cf; font-family:'opensans_bld', Arial, Helvetica, sans-serif; font-size:16px; float:left; width:96%; margin:10px 2%; padding:10px 4%;}
 .amount_table td{padding:5px; border-bottom:1px solid #a6c1d8;}
 .amount_table tr:last-child td{border-bottom:0}
 .amount_note{margin:10px 0px; width:100%; float:left; text-align:center; color:#fff; font-size:18px; }
@@ -214,10 +214,12 @@ label.css-radio-label{background-image:url(../styles/images/radio_btns.png);-web
 #container .sbi .bank_account_container.leftSid .option {float:none; width:100%;display: inline-block; margin:0;}
 
 .option.only_txt a i { font-size:1.4em; font-style:normal; margin:10px 10px 0; float:right;}
-.white_bg_txt { background: none repeat scroll 0 0 #fff;  color: #004c8f;  float: left;  font-size: 19px;  padding: 20px 4%;  text-align: center;width: 92%;}
+.white_bg_txt { background: none repeat scroll 0 0 #fff;  color: #004c8f;  float: left;  font-size: 19px;  padding: 20px 4%;  text-align: center;width:100%;}
 .smbld {font-family: "opensans_smbld",Arial,Helvetica,sans-serif;}
 .white_bg_txt span { display: block;  margin: 10px 0;font-family: "opensans_lgt",Arial,Helvetica,sans-serif;}
-
+.blue_btn { background: none repeat scroll 0 0 #006192; border: 3px solid #fff; border-radius: 30px;color: #fff; display: block; padding: 4px 20px; text-align: center;}
+.btns_container > .btn > input.orange_btn { border-radius:0;}
+b.display_blk { display:block;}
 /*------Default Classes------*/
 @media screen and (max-width:1280px){
 .logo_sec {margin-top: 126px;}
