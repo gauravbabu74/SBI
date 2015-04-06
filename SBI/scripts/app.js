@@ -6,7 +6,7 @@
       navigator.splashscreen.hide();
       if(navigator.geolocation)
       {
-        //navigator.geolocation.getCurrentPosition(oncallback);
+        navigator.geolocation.getCurrentPosition(oncallback);
           
       }  
         
@@ -15,6 +15,7 @@
     {
         var latitude = position.coords.latitude,
             longitude = position.coords.longitude;
+        
         var geocodingAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+latitude+","+longitude;
 
         $.getJSON(geocodingAPI, function (json) {
