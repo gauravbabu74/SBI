@@ -6,7 +6,7 @@
       navigator.splashscreen.hide();
       if(navigator.geolocation)
       {
-        navigator.geolocation.getCurrentPosition(oncallback);
+        //navigator.geolocation.getCurrentPosition(oncallback);
           
       }  
         
